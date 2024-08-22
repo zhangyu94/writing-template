@@ -1,0 +1,72 @@
+\section{Figures}
+
+\subsection{Loading figures}
+
+The style automatically looks for image files with the correct extension (eps for regular \LaTeX; pdf, png, and jpg for pdf\LaTeX), in a set of given subfolders defined above using \verb|\graphicspath|: figures/, pictures/, images/.
+It is thus sufficient to use \verb|\includegraphics{CypressView}| (instead of \verb|\includegraphics{pictures/CypressView.jpg}|).
+Figures should be in CMYK or Grey scale format, otherwise, colour shifting may occur during the printing process.
+
+\subsection{Vector figures}
+
+Vector graphics like svg, eps, pdf are best for charts and other figures with text or lines.
+They will look much nicer and crisper and any text in them will be more selectable, searchable, and accessible.
+
+\subsection{Raster figures}
+
+Of the raster graphics formats, screenshots of user interfaces and text, as well as line art, are better shown with png.
+jpg is better for photographs.
+Make sure all raster graphics are captured in high enough resolution so they look crisp and scale well.
+
+\subsection{Alt texts}
+
+Add alternative texts that describe the content of the image to all figures.
+
+\subsection{Figures on the first page}
+
+The teaser figure should only have the width of the abstract as the template enforces it.
+The use of figures other than the optional teaser is not permitted on the first page.
+Other figures should begin on the second page.
+Papers submitted with figures other than the optional teaser on the first page will be refused.
+
+\subsection{Subfigures}
+
+You can add subfigures using the \texttt{subcaption} package that is automatically loaded.
+Inside a \verb|figure| environment, create a \verb|subfigure| environment.
+See \cref{fig:ex_subfigs} for an example.
+You can reference individual figures, either fully using \verb|\cref| (\cref{fig:ex_subfigs_a,fig:ex_subfigs_b}) or by letter using \verb|\subref|.
+E.g., \subref{fig:ex_subfigs_b}, \subref{fig:ex_subfigs_c}.
+Note that \verb|\subref| only works for one label at a time.
+
+\begin{figure}[tbp]
+  \centering
+  \begin{subfigure}[b]{0.45\columnwidth}
+  	\centering
+  	\includegraphics[width=\textwidth, alt={Big letter A on a gray background.}]{example-image-a}
+  	\caption{The letter A.}
+  	\label{fig:ex_subfigs_a}
+  \end{subfigure}%
+  \hfill%
+  \begin{subfigure}[b]{0.45\columnwidth}
+  	\centering
+  	\includegraphics[width=\textwidth, alt={Big letter B on a gray background.}]{example-image-b}
+  	\caption{The letter B.}
+  	\label{fig:ex_subfigs_b}
+  \end{subfigure}%
+  \\%
+  \begin{subfigure}[b]{0.45\columnwidth}
+  	\centering
+  	\includegraphics[width=\textwidth, alt={Big letter C on a gray background.}]{example-image-c}
+  	\caption{The letter C.}
+  	\label{fig:ex_subfigs_c}
+  \end{subfigure}%
+  \subfigsCaption{Example of adding subfigures with the \texttt{subcaption} package.}
+  \label{fig:ex_subfigs}
+\end{figure}
+
+\subsection{Figure Credits}
+\label{sec:figure_credits_inst}
+
+In the \hyperref[sec:figure_credits]{Figure Credits} section at the end of the paper, you should credit the original sources of any figures that were reproduced or modified.
+Include any license details necessary, as well as links to the original materials whenever possible.
+For credits to figures from academic papers, include a citation that is listed in the \textbf{References} section.
+An example is provided \hyperref[sec:figure_credits]{below}.

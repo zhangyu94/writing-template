@@ -1,0 +1,21 @@
+\section{Equations and Tables}
+
+Equations can be added like so:
+
+\begin{equation}
+  \label{eq:sum}
+  \sum_{j=1}^{z} j = \frac{z(z+1)}{2}
+\end{equation}
+
+Tables, such as \cref{tab:vis-papers} can also be included.
+
+\input{./assets/tables/1-vis-papers/vis-papers.tex}
+
+\begin{figure}[tb]% specify a combination of t, b, p, or h for top, bottom, on its own page, or here
+  \centering % avoid the use of \begin{center}...\end{center} and use \centering instead (more compact)
+  \includegraphics[width=\columnwidth, alt={A line graph showing paper counts between 0 and 160 from 1990 to 2016 for 9 venues.}]{./assets/imgs/2-paper-count-2016/paper-count-2016.pdf}
+  \caption{%
+  	A visualization of the 1990--2016 data from \cref{tab:vis-papers}, recreated based on Fig.\ 1 from \cite{Isenberg2017Vispubdata.orgMetadataCollection}.%
+  }
+  \label{fig:vis_papers}
+\end{figure}

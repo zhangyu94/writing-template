@@ -1,0 +1,25 @@
+\section{Appendices}
+\label{sec:appendices_inst}
+
+Appendices can be specified using \verb|\appendix|.
+For example, our Troubleshooting instructions in
+\iflabelexists{appendix:troubleshooting}
+  {\cref{appendix:troubleshooting}}
+  {the appendix of the full paper at \url{https://osf.io/nrmyc}}.
+
+Note that the paper submission has to end after the \textbf{References} section and within the page limit of the conference you are submitting to.
+Any version of Appendices or the paper with Appendices included has to be submitted separately as supplementary material.
+You can use the \verb|hideappendix| class option to remove everything after \verb|\appendix|.
+We encourage you to submit a full version of your paper to a preprint server with any appendices included.
+
+You can use the \verb|\iflabelexists| macro to cross reference an appendix from the main text, but only if that label (i.e.\ the appendix) actually exists.
+For example, above we use 
+
+\begin{verbatim}
+\iflabelexists{appendix:troubleshooting}
+  {\cref{appendix:troubleshooting}}
+  {the appendix of the full paper at
+   \url{https://osf.io/XXXXX}}.
+\end{verbatim}
+
+in order to cross-reference to the appendix with \verb|\cref| if it exists, but if the appendix is commented out then we will simply create a hyperlinked URL to it.

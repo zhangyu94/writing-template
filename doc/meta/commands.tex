@@ -1,0 +1,12 @@
+% -------------
+% Condense the space in the enumeration environment (enum and itemize):
+\setlist{noitemsep,parsep=0pt,partopsep=0pt}
+% -------------
+
+% -------------
+% Annotate revision and comments:
+\usepackage{soul}
+\newcommand{\revised}[1]{{\color{red}#1}}
+%\newcommand{\revised}[1]{{#1}}
+\newcommand{\remark}[1]{{\color{brown}[Remark: #1]}}
+% -------------

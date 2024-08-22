@@ -1,0 +1,13 @@
+\section{Hyperlinks and Cross References}
+
+The style uses the \verb|hyperref| package which can typeset clickable hyperlinks using \verb|\href{...}{...}|, hyperlinked URLs using \verb|\url{...}|, and turns references into internal links.
+
+The style also uses \verb|cleveref| to automatically and consistently format cross references.
+We recommend that you use the \verb|\cref{label}| and \verb|\Cref{label}| calls instead of \verb|Figure~\ref{label}| or similar.
+\verb|\Cref| should be used when starting a sentence to spell out the reference (e.g.\ ``Section'') while \verb|\cref| should be used when referencing within a sentence to abbreviate (e.g.\ ``Sec.'').
+Here are examples for use within a sentence: \cref{fig:vis_papers}, \cref{tab:vis-papers}, \cref{sec:supplement_inst,sec:references_inst}, \cref{eq:sum}.
+The following sentences all start with a reference, so use \verb|\Cref|.
+\Cref{fig:vis_papers} is a \verb|figure| environment.
+\Cref{tab:vis-papers} is a \verb|table| environment.
+\Cref{sec:supplement_inst,sec:references_inst} are \verb|section| environments.
+\Cref{eq:sum} is an \verb|equation| environment.
