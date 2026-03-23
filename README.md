@@ -2,6 +2,22 @@
 
 A file structure template for organizing assets related to an academic paper.
 
+## Paper Identification
+
+Writing for "[Paper Title](https://doi.org/...)"
+
+## Related Repositories
+
+| type    | status  | description      | link                            |
+| ------- | ------- | ---------------- | ------------------------------- |
+| code    | active  | ...              | [github](...)                   |
+| writing | active  | paper repository | [github](...) / [overleaf](...) |
+| design  | active  | ...              | [figma](...)                    |
+| others  | archive | ...              | [github](...)                   |
+
+- **type:** `code`, `writing`, `design`, `others`
+- **status:** `active`, `maintenance`, `archive`
+
 ## File Structure
 
 - `./doc`: the writing of the paper (in [LaTeX](https://www.latex-project.org/), [Typst](https://github.com/typst/typst), or other typesetting systems)

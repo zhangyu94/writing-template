@@ -2,4 +2,10 @@
 
 The conventions for formatting and typesetting the paper.
 
-- TVCG template by default only capitalizes the first character of a paper title. Thus, we need to use curly brackets to protect the upper case word when necessary (e.g., name of systems or people).
+## Title and Capitalization
+
+- TVCG template by default only capitalizes the first character of a paper title. Use curly brackets to protect upper-case words when necessary (e.g., name of systems or people): `\title{My {System} Name}`.
+
+## Citation Style
+
+- Prefer `~` before citations to avoid awkward line breaks: `as shown by Smith~\cite{Smith2020}`.
